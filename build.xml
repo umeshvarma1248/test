@@ -49,7 +49,7 @@
     <!-- Shows deploying code & running tests for code in directory -->
     <target name="deployCode">
       <!-- Upload the contents of the "codepkg" directory, running the tests for just 1 class -->
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" rollbackOnError="true">
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="./src" rollbackOnError="true">
         <runTest>SampleDeployClass</runTest>
       </sf:deploy>
     </target>
@@ -73,7 +73,7 @@
 
     <!-- Shows check only; never actually saves to the server -->
     <target name="deployCodeCheckOnly">
-      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" checkOnly="true"/>
+      <sf:deploy username="${sf.username}" password="${sf.password}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="src" checkOnly="true"/>
     </target>
 
 	<!-- Retrieve the information of all items of a particular metadata type -->
