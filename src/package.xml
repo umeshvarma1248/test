@@ -16,6 +16,8 @@
     <!-- This is a second comment -->
     <!-- This is a third comment -->
     <!-- This is a fourth comment -->
+    <!-- This is a fifth comment -->
+    
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
