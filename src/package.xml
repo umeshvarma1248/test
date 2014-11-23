@@ -13,6 +13,7 @@
         <name>ApexPage</name>
     </types>
     <!-- This is a comment -->
+    <!-- This is a second comment -->
     <types>
         <members>*</members>
         <name>ApexTrigger</name>
